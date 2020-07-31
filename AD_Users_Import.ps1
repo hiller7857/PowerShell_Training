@@ -1,6 +1,6 @@
 #Define log Path and start capturing output
 $Log = C:\users\jhiller_a.corp\documents\UserCreation_$(get-date -f yyyy-MM-dd).txt
-Start-Transcript
+Start-Transcript $Log
 
 #Import Module need to create users
 import-module ActiveDirectory -ErrorAction Stop
